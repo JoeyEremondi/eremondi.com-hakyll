@@ -26,11 +26,198 @@
         </script>
 
     </head>
+
+<body>
+
+<link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon" />
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/bootstrap-theme.min.css" />
+
+<header class="navbar navbar-default navbar-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="/posts.html">Posts</a>
+        </li>
+        <li>
+          <li><a href="/about-me.html">About Me</a></li>
+        </li>
+        <li>
+          <li><a href="/research.html">My Research</a></li>
+        </li>
+        <li>
+          <li><a href="/publications.html">Publications</a></li>
+        </li>
+        <li>
+          <li><a href="/software.html">Software</a></li>
+        </li>
+      </ul>
+      <ul class="nav navbar-right navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+          <ul class="dropdown-menu" style="padding:12px;">
+            <form class="form-inline">
+              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input class="form-control pull-left" placeholder="Search" type="text">
+            </form>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>Joey Eremondi
+          <p class="lead">Researcher and Developer</p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              <img src="http://joey.eremondi.com/wp-content/uploads/2013/07/cropped-joey_cropped_001.jpg" width=140 height=175>			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+ 
+</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+        
+          
+          <!--/stories-->
+		  <div class="row">    
+            <br>
+            <div class="col-md-2 col-sm-3 text-center">
+              <!-- <a class="story-img" href="#"><img src="//placehold.it/100" style="width:100px;height:100px" class="img-circle"></a> 
+              -->
+            </div>
+            <div class="col-md-10 col-sm-9">
+            
+            <div class="title text-center">
+                    <h2>$title$</h2>
+                    <hr>
+                </div>
+            
+            $body$
+            
+            
+            
+          
+          
+          <!--
+          <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+          -->
+        
+          
+        </div>
+      </div>
+                                                                                       
+	                                                
+                                                      
+   	</div><!--/col-12-->
+  </div>
+</div>
+                                                
+                                                                                
+<hr>
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Connect With Me:</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="http://twitter.com/jmitePlus"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="http://github.com/JoeyEremondi"><i class="icon-facebook icon-large"></i> Github</a>
+	   <a class="btn btn-google-plus btn-lg" href="http://ca.linkedin.com/in/jeremondi‎"><i class="icon-google-plus icon-large"></i> LinkedIn</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Joey's Computing Blog: $title$</title>
+        <link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="/css/default.css" />
+        <link rel="stylesheet" href="/css/syntax.css" />
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+        <script type="text/x-mathjax-config"> 
+            MathJax.Hub.Config( { tex2jax: { inlineMath: [ ["\\(", "\\)"] ]
+                                           , displayMath: [ ["\\[", "\\]" ] ]
+                                           , processEscapes: true
+                                           }
+                              });
+        </script> 
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> 
+        </script> 
+
+        <script type="text/javascript" src="/js/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="/js/bootstrap.min.js">
+        </script>
+
+    </head>
     <body>
         <div class="container">
             <div id="header">
                 <div id="logo" class="text-center">
-                    <h1>Joey's Computing Blog</h1>
+                    <h1>Joey Eremondi: Researcher and Developer</h1>
                 </div>
                 <ul id="navigation" class="list-inline text-center">
                     <li><a href="/">Home</a></i>
@@ -73,3 +260,4 @@
         </script>
     </body>
 </html>
+-->

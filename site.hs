@@ -20,9 +20,16 @@ import qualified Text.Blaze.Html5.Attributes     as A
 import Text.Pandoc
 import Text.Pandoc.Options
 
+import GHC.IO.Encoding
+
 
 main :: IO ()
 main = do 
+
+    setLocaleEncoding utf8
+    setFileSystemEncoding utf8
+    setForeignEncoding utf8
+
     year <- getCurrentYear
 
     hakyllWith config $ do
@@ -208,7 +215,7 @@ config = defaultConfiguration
 
 myPandocCompiler' :: Maybe String -> Compiler (Item String)
 myPandocCompiler' withToc = 
-    pandocCompilerWith defaultHakyllReaderOptions $
+    pandocCompilerWith (defaultHakyllReaderOptions {readerSmart = False} ) $
         case withToc of
             Just x | map toLower x `elem` ["true", "yes"] -> writerWithToc
                    | otherwise                            -> writerOpts
