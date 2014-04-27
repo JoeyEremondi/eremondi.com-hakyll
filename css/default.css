@@ -1,215 +1,163 @@
-@font-face {
-    font-family: "PW Cactus";
-    src: url('/css/PWCactus.ttf');
-}
+/*
+ * Globals
+ */
 
 body {
-    background-color: #fafafa;
-    /* background-color: #ffffff; */
-    color: black;
-    font-size: 16px;
-    min-width: 800px;
-    font-family: georgia, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
 }
 
-.container {
-    padding: 20px;
-    width: 65%;
-    height: auto;
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
 }
 
-#logo div {
-    color: #99a;
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
 }
 
-#logo h1 {
-    font-family: "PW Cactus", sans-serif;
-    font-size: 300%;    
-    text-shadow:1px 10px 10px #ddd;
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #428bca;
+  box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
 
-#navigation {
-    width: 100%;
-    margin: 20px 0;
-    border-top: 1px solid #444;
-    border-bottom: 1px solid #444;
-    padding: 8px 0;
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
 }
 
-#navigation a, #navigation a:visited, #navigation a:hover {
-    /* font-variant: small-caps; */
-    font-size: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-family: Arial, sans-serif;
-    letter-spacing: 3px;
-
-    /* color: #00499C */
-    color: #428bca;
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right:  5px solid transparent;
+  border-bottom: 5px solid;
+  border-left:   5px solid transparent;
 }
 
-figure {
-    width: 50%;
-    margin: 32px auto;
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
 }
 
-figure img {
-    margin: 16px auto;
-    max-width: 400px;
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-figure figcaption {
-    text-align: center;
-    font-style: oblique;
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
 }
 
-.info, .date {
-    font-style: oblique;
-    font-family: arial, sans-serif;
-    font-size: 16px;
-    color: #bbb;
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
 }
 
-.list-group .date {
-    font-size: 14px;
-    padding-left: 32px;
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
 }
 
-.post-content h1, .page-content h1 {
-    font-size: 32px;
-}
 
-.post-content h2, .page-content h2 {
-    font-size: 24px;
-}
+/*
+ * Footer
+ */
 
-#toc h2, #toc h1 {
-    font-size: 32px !important;
-}
-
-.post-content h3, .page-content h3 {
-    font-size: 20px;
-}
-
-.post-content ul, .page-content ul {
-    list-style-type: square;
-}
-
-.post-content p {
-    text-align: justify;
-}
-
-.container p {
-    margin-left: 12px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-
-pre {
-    width: 90%;
-    margin: 12px auto;
-}
-
-code {
-    background-color: #e8e8e9;
-    /* background-color: #fafafa; */
-    color: #333388;
-}
-
-hr {
-    background-color: #aaa;
-    color: #aaa;
-    height: 1px;
-    width: 100%;
-    margin: 16px auto;
-}
-
-#footer {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 2px;
-    width: 100%;
-}
-
-#footer a {
-    color: #446;
-}
-
-#footer hr {
-    width: 100%;
-}
-
-.title hr {
-    width: 25% !important;
-    margin: 25px auto 36px;
-
-}
-
-.tagcloud hr {
-    width: 25% !important;
-}
-
-.centerize {
-    margin: 0 auto;
-}
-
-ul {
-    list-style: none;
-}
-
-.tags li a:hover {
-    background-color: #428bca;
-    /* background-color: #efefef; */
-    color: #fff;
-    width: 100%;
-    text-decoration: none;
-    font-size: 12px;
-}
-
-.tags li a {
-    background-color: #fff;
-    color: #428bca;
-    /* text-decoration: underline; */
-    border: 1px solid #428bca;
-    font-size: 12px;
-    padding: 4px;
-}
-
-.list-group-item-heading {
-    width: 100%;
-}
-
-.list-group-item-heading a {
-    font-size: 150%;
-    color: #00499C;
-}
-
-.tagcloud {
-    width:80%;
-    margin: 0 auto 6px;
-}
-
-.fa-rss {
-    color: #a45;
-}
-
-#toc {
-    float: right;
-    margin-left: 16px;
-    width: 300px;
-}
-
-#toc ul {
-    list-style-type: upper-roman;
-}
-
-#toc li > ul {
-    list-style-type: decimal;
-}
-
-#toc h3 {
-    text-align: center;
-}
-p .math {
-    font-size: 110%;
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
 }
