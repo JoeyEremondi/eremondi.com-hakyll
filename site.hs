@@ -153,11 +153,11 @@ pageCtx = mconcat
 -- | Holds my feed's configuration
 myFeedConfiguration :: FeedConfiguration
 myFeedConfiguration = FeedConfiguration
-    { feedTitle       = "Alp Mestanogullari"
-    , feedDescription = "From Hask Till Dawn"
-    , feedAuthorName  = "Alp Mestanogullari"
-    , feedAuthorEmail = "alpmestan@gmail.com"
-    , feedRoot        = "http://alpmestan.com"
+    { feedTitle       = "Joey's Computing Blog"
+    , feedDescription = "Haskell, Elm, Theory and More!"
+    , feedAuthorName  = "Joey Eremondi"
+    , feedAuthorEmail = "joey@eremondi.com"
+    , feedRoot        = "http://eremondi.com"
     }
 
 -- -----------------------------------------------------------------------------
