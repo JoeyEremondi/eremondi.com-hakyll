@@ -7,8 +7,8 @@ version:             0.1.0.0
 -- description:         
 license:             BSD3
 license-file:        LICENSE
-author:              Alp Mestanogullari
-maintainer:          alpmestan@gmail.com
+author:              Joey Eremondi
+maintainer:          joey@eremondi.com
 -- copyright:           
 category:            Web
 build-type:          Simple
