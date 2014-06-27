@@ -1,4 +1,6 @@
 language: haskell
+ghc:
+  - 7.6
 branches:
   only:
   - master
@@ -6,6 +8,7 @@ env:
   global:
   - secure: gD9WyQSukZkNyGe92ByFHVAVruFyMwLPr6K8nnpqJDorlWLPoRm8EwmiV08cQXLVseDj4FopmHIAKViPdiX/FuONR9MNWn0u58rDdwr0Cl8/QIiFkdl37PbG3MO5rCjd4HJQUIs2EEO/tu9TWFnobW7TGei3rcQhNuSsFvDNkmQ=
 install:
+- cabal update
 - cabal install hakyll
 - ghc --make site.hs
 before_script:
