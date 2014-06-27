@@ -7,7 +7,7 @@ toc: true
 
 **Education**
 
-This June, I will graduate from the [University of Saskatchewan](http://www.usask.ca)
+I completed my undergraduate education at the [University of Saskatchewan](http://www.usask.ca)
 with a B.Sc. Honours in Computer Science
 and a B.Sc. 4-year in Mathematics.
 
