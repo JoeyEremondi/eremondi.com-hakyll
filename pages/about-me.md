@@ -19,7 +19,7 @@ at the [University of Utrecht](http://www.uu.nl).
 My areas of interest include formal languages, theory of computation, and functional/logical programming.
 My main languages of development are [Haskell](http://haskell.org), [SWI-Prolog](http://swi-prolog.org/), [Python](http://python.org)
 and [Elm](http://elm-lang.org).
-I've also completed projects in C, Java, Scheme, and Standard ML.
+I've also completed projects in C,  Java, Scheme, and Standard ML.
 
 In addition to taking classes, I am actively involved in research for my Honours Thesis. My current research focuses around the shuffle operator on words in Formal Language Theory.
 
