@@ -1,25 +1,26 @@
 language: haskell
 branches:
   only:
-    - source
+  - source
 env:
   global:
-    - secure: "the secret you just generated"
+  - secure: the secret you just generated
+  - secure: gD9WyQSukZkNyGe92ByFHVAVruFyMwLPr6K8nnpqJDorlWLPoRm8EwmiV08cQXLVseDj4FopmHIAKViPdiX/FuONR9MNWn0u58rDdwr0Cl8/QIiFkdl37PbG3MO5rCjd4HJQUIs2EEO/tu9TWFnobW7TGei3rcQhNuSsFvDNkmQ=
 install:
-  - cabal install hakyll
-  - ghc --make site.hs
+- cabal install hakyll
+- ghc --make site.hs
 before_script:
-  - cd _site
-  - git checkout master
-  - git pull origin master
-  - cd ..
+- cd _site
+- git checkout master
+- git pull origin master
+- cd ..
 script: ./site build
 after_script:
-  - cd _site
-  - git status
-  - git add --all
-  - git config --global user.email "your@mailaddress.com"
-  - git config --global user.name "Travis"
-  - git commit -m "snapshot $(date '+%m/%d/%y %H:%M')"
-  - git push "$REPO_URL" master | grep -v http
-  - cd ..
+- cd _site
+- git status
+- git add --all
+- git config --global user.email "your@mailaddress.com"
+- git config --global user.name "Travis"
+- git commit -m "snapshot $(date '+%m/%d/%y %H:%M')"
+- git push "$REPO_URL" master | grep -v http
+- cd ..
