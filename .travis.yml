@@ -4,7 +4,6 @@ branches:
   - source
 env:
   global:
-  - secure: the secret you just generated
   - secure: gD9WyQSukZkNyGe92ByFHVAVruFyMwLPr6K8nnpqJDorlWLPoRm8EwmiV08cQXLVseDj4FopmHIAKViPdiX/FuONR9MNWn0u58rDdwr0Cl8/QIiFkdl37PbG3MO5rCjd4HJQUIs2EEO/tu9TWFnobW7TGei3rcQhNuSsFvDNkmQ=
 install:
 - cabal install hakyll
@@ -19,8 +18,8 @@ after_script:
 - cd _site
 - git status
 - git add --all
-- git config --global user.email "your@mailaddress.com"
-- git config --global user.name "Travis"
+- git config --global user.email "joey@eremondi.com"
+- git config --global user.name "JoeyEremondi"
 - git commit -m "snapshot $(date '+%m/%d/%y %H:%M')"
 - git push "$REPO_URL" master | grep -v http
 - cd ..
