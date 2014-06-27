@@ -8,10 +8,10 @@ env:
   global:
   - secure: gD9WyQSukZkNyGe92ByFHVAVruFyMwLPr6K8nnpqJDorlWLPoRm8EwmiV08cQXLVseDj4FopmHIAKViPdiX/FuONR9MNWn0u58rDdwr0Cl8/QIiFkdl37PbG3MO5rCjd4HJQUIs2EEO/tu9TWFnobW7TGei3rcQhNuSsFvDNkmQ=
 install:
-- cabal update
-- cabal install hakyll
+- cabal install -j --only-dependencies eremondi.com-hakyll.cabal
 - ghc --make site.hs
 before_script:
+- ls -a
 - cd _site
 - git checkout master
 - git pull origin master
